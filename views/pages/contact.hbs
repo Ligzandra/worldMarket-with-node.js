@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldMarket</title>
+
+
+    <style>
+        .container{width: 80%; margin-left: 10%; background-color: white;}
+        .flex{display: flex;}.sbw{justify-content: space-between;} .center{align-items: center;}
+        .static_Nav{width: 100%;margin: 0 auto; background: #f7f8f9; max-width: 1200px;z-index: 999999;height: 40px;}
+        .My_store{width: 90%; margin-left: 5%; font-family: "SofiaProBold",Arial,Rockwell,Georgia,Times New Roman;}
+        .Nav_Options{width: 90%; margin-right: 5%;font-family: "SofiaProLight",Arial,Rockwell,Georgia,Times New Roman; letter-spacing: .05em;font-weight: lighter;}
+        .Discover{width: 100%; background-color: white;height: 100px; margin-top: 5%;}
+        .WM_Logo{width: 90%; margin-left: 5%;}
+        .Dis_Some{width: 90%; margin-right: 0%;}
+        .Dis_Some_Con{width: fit-content;margin-left: 60%;border: 1px solid black;display: flex; justify-content: flex-end; height: 20%;}
+        .something input, .search button{border: none; letter-spacing: 0.1em;}
+        .something input{width: 100%;}
+        .search button{background-color: white;}
+        .menus{width: 100%;}
+        .Members_join{text-align: center;background: #f4faf8; height: 72px;}
+        /* .Inspiration{text-align: center;letter-spacing: 0.05em;line-height: 21px;font-family: "SofiaProRegular",Arial,Rockwell,Georgia,"Times New Roman";    font-weight: normal; } */
+        /* .home p{font-size:12px;}.ideas{width: 100%;background: #f4faf8}.ideas_sub{width: 90%; margin-left: 5%;height: 100px;} .ideas_sub p{font-weight:"bold"; font-size: 14px;} */
+        a{text-decoration:none; color: black;}
+        .Cust_erv{width: 100%; height: 410px;  }
+        .Custom{width:30%;}
+        .CustomerServ{width:100%;margin-left: 10%; }
+        .CustomerServ input, .CustomerServ select{width: 70%;height: 50px; border-radius: 8px ; border: 0.5px solid black; outline: none;}
+        .CustomerServ textarea{width: 70%; height:150px}
+        .WMPhone{width: 70%;}
+        .WMPhone input{width: 43.5%;gap: 5%;}
+        .send{background-color: rgb(27, 100, 129); width: 20%;font-size:15px; text-align: center; color:white;height: 50px;font-weight: bolder; outline:none;}
+        .footerArea{width:100%;margin-top: 5%;}
+        .footer{width:100%;font-size:x-small;font-family: "SofiaProRegular",Arial,Rockwell,Georgia,Times New Roman; margin-left: 3%;margin-right: 5%;}
+
+    </style>
+</head>
+
+
+<body>
+
+  <div class="container">
+        <div class="static_Nav flex sbw center">
+            <div class="My_store flex">
+                <h5>My Store: </h5>
+                <h5>Select Your Store</h5>
+            </div>
+            <div class="Nav_Options flex sbw">
+                <div class="signin">
+                    {{!-- <img src="./img/contact logo.png" alt="" /> --}}
+                     <h5><a href="/signin">Sign In</a></h5>
+                </div>
+                <div class="wishlist">
+                    {{!-- <img src="./img/wishlist-icon-19.jpg" alt="" /> --}}
+                    <h5>Wish List</h5>
+                </div>
+                <div class="cart">
+                    {{!-- <img src="" alt="" /> --}}
+                    <h5>Cart</h5>
+                </div>
+            </div>
+        </div>
+        <div class="Discover flex sbw">
+                <div class="WM_Logo">
+                        <img src="./img/logo.png"/>
+                </div>
+                <div class="Dis_Some ">
+                        <div class="Dis_Some_Con">
+                             <div class="something"><input type="search" value="" placeholder="Discover Something ...." /></div>
+                              <div class="search"> <button type="submit">&#128269</button></div>
+                        </div>
+                </div>
+        </div>
+        <div class="menus flex sbw">
+            <div><p>Furniture</p></div>
+            <div><p>Outdoor</p></div>
+            <div><p>Rugs</p></div>
+            <div><p> Decor & Lighting</p></div>
+            <div><p>Bed & Bath</p></div>
+            <div><p>Kitchen & Dinnerware</p></div>
+           <div><p>Food & Drink</p></div>
+            <div><p>Jewelry & Clothing</p></div>
+            <div><p>Gifts</p></div>
+            <div><p>Holidays</p></div>
+            <div><p>Sale</p></div>
+            <div><p>Inspiration</p></div>
+            
+            
+        </div>
+        <div class="Members_join">
+            <div class="members">
+                <h5>Members Save 15% On Curbside Pick-Up Orders<br>
+                    <a href="">Join Now</a> <a href="" >Details</a></h5>
+            </div>
+        </div>
+      
+        
+        <div class="Cust_erv flex">
+            <div class="Custom">
+                <p>  >  Customer Service </p>
+                <hr>
+                <h3>Contact Us</h3>
+            </div>
+            <div class="CustomerServ">
+                <h2>CUSTOMER SERVICE</h2>
+                <p>Contact Us By Phone at 1-877-967-5362 or please email us using the form below.</p>
+                <p>* indicates a required field</p>
+
+                <form method="POST" action="/" >
+                    <div>
+                        <input type="text" name="name" placeholder="First Name" required/>
+                    </div><br>
+                    <div>
+                        <input type="text" name="name" placeholder="Last Name" required/>
+                    </div><br>
+                    <div class="WMPhone flex sbw">
+                        <input type="number" name="phone" placeholder="Phone" required/>
+                        <input type="number" name="WM Id" placeholder="World Markets Reward Id" required/>
+                    </div><br>
+                    <div>
+                        <input type="email" name="email" placeholder="Email" required/>
+                     <div><br>
+                    <div>
+                        <!-- <label for="cars">Choose a car:</label> -->
+                        <select name="topic" id="">
+                            <option>Select a topic</option>
+                            <option>Order Inquiry</option>
+                            <option>Placin an Order</option>
+                            <option>Rewards</option>
+                            <option>My Account Information</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <textarea  name="message">*message.</textarea>
+                    </div><br>
+                    <div class="send_div">
+                        <button class="send">SEND</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+      
+        
+       
+    
+
+ </div>
+
+    
+</body>
+</html>

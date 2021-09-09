@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldMarket</title>
+
+
+    <style>
+        .container{width: 80%; margin-left: 10%; background-color: white;}
+        .Discover{width: 100%; background-color: white;height: 80px;}
+        .WM_Logo{width: 90%; margin-left: 5%;}
+        .Dis_Some{width: 90%; margin-right: 0%;}
+        .Dis_Some_Con{width: fit-content;margin-left: 60%;border: 1px solid black;display: flex; justify-content: flex-end; height: %;}
+        .flex{display: flex;}.sbw{justify-content: space-between;} .center{align-items: center;}
+        .Cust_erv{width: 50%; height: 410px; margin-left: 25%;margin-top: 5%; }
+        .did{background-color:#f4faf8;height:60px ; text-align:center;padding: 12px 0;}
+        .CustomerServ{width:100%; }
+        .CustomerServ input{font-size: 16px;}
+        .CustomerServ input, .CustomerServ select{width: 100%;height: 50px; border-radius: 8px ; border: 0.5px solid black; outline: none;}
+        .CustomerServ textarea{width: 100%; height:150px}
+        .WMPhone{width: 100%;text-align: center; font-size:large;}
+        .WMPhone div{width: 43.5%;gap: 5%; font-weight: bolder;}
+        .sign{border-right: 1px solid grey;}
+        .send{background-color: rgb(27, 100, 129); width: 100%;font-size:15px; text-align: center; color:white;height: 50px;font-weight: bolder; outline:none;}
+        a{text-decoration:none; color: black;}
+        .forget{font-size: 14px;}
+        .keeper{width:100%; gap:5%;}
+        .keeper input{width: 5%; margin: 0; padding:0; }
+        .keeper input:checked{background:rgb(19, 62, 80);}
+        .keeper label{font-size: 14px; margin-top: 3%;}                                                                                                                                                                 
+        .check{text-align: center;}
+        .check p{font-size: 10px;}
+        .WMPhones{width: 100%;}
+        .WMPhones input{width: 49.5%;gap: 5%;}
+        .cake{margin-right: 2%;}
+        .birth{display: flex; justify-content: center; align-items: center;}
+        .footer{font-size:x-small;font-family: "SofiaProRegular",Arial,Rockwell,Georgia,Times New Roman; padding-left: 3%;padding-right: 5%;}
+    </style>
+</head>
+
+
+<body>
+    
+    <div class="container">
+        {{{toplogo}}}
+        <hr>
+        <div class="Cust_erv">
+            <div class="did">
+                <p>Did you sign-up via SMS or with an associate in-store?<br>
+                    Complete your profile</p>
+            </div><br><br><br>
+            <div class="CustomerServ">
+              
+
+                <form method="POST" action="/" >
+                   
+                    <div class="WMPhone flex">
+                        <div class="sign"> <a href="/signin">SIGN IN</a></div>
+                        <div class="join"> <a href="/join">JOIN</a></div>
+                    </div><br>
+
+                     <div class="WMPhones flex sbw">
+                        <input type="number" name="phone" placeholder=" *First Name" required/>
+                        <input type="number" name="WM Id" placeholder=" *Last Name" required/>
+                    </div><br>
+
+                    <div>
+                        <input type="email" name="email" placeholder="  *Email Address" required/>
+                     </div><br>
+                     <div>
+                            <input type="password" name="password" placeholder="    *Password (min 6 characters)" required/>
+                     </div><br>
+
+                     <div>
+                            <input type="password" name="password" placeholder="    *10-digit Member ID (like a phone number)" required/>
+                     </div><br>
+                     <div class="birth flex ">
+                            <div class="cake"><img src="img/birthday.JPG" alt=""/></div>
+                           <h4>Enter your birthdate to receive a free gift every year (optional)</h4>
+
+                    </div>
+
+                     <div class="WMPhones flex sbw">
+                        <input type="number" name="phone" placeholder=" Month" required/>
+                        <input type="number" name="WM Id" placeholder=" Day" required/>
+                    </div><br>
+
+                    <div class="forget">
+                        <div class="keeper flex">
+                           <input type="checkbox" name="keepSigned" value="keepSigned" checked/>
+                            <label for="vehicle1"> Yes, I’d like email from World Market.</label><br>
+                        </div>
+                         <div class="keeper flex">
+                           <input type="checkbox" name="keepSigned" value="keepSigned" />
+                            <label for="vehicle1"> Yes! Send me exclusive text rewards.</label><br>
+                        </div>
+                    </div><br>
+                    <div>
+                            <input type="password" name="password" placeholder="    *Zip Code- to get local store offers" required/>
+                     </div><br>
+
+                    <div class="keeper flex">
+                           <input type="checkbox" name="keepSigned" value="keepSigned" required/>
+                            <label for="vehicle1"> * I accept the program Terms & Conditions and Privacy Policy</label><br>
+                        </div>
+
+                   
+                    <div class="send_div">
+                        <button type="submit" class="send">JOIN NOW</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      
+    </div>
+
+    
+</body>
+</html>

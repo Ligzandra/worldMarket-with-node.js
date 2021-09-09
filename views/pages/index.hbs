@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+
+    <style>
+        .container{width: 80%; margin-left: 10%; background-color: white;}
+        .flex{display: flex;}.sbw{justify-content: space-between;} .center{align-items: center;}
+        .static_Nav{width: 100%;margin: 0 auto; background: #f7f8f9; max-width: 1200px;z-index: 999999;height: 40px;}
+        .My_store{width: 90%; margin-left: 5%; font-family: "SofiaProBold",Arial,Rockwell,Georgia,Times New Roman;}
+        .Nav_Options{width: 90%; margin-right: 5%;font-family: "SofiaProLight",Arial,Rockwell,Georgia,Times New Roman; letter-spacing: .05em;font-weight: lighter;}
+        .Discover{width: 100%; background-color: white;height: 80px; margin-top: 5%;}
+        .WM_Logo{width: 90%; margin-left: 5%;}
+        .Dis_Some{width: 90%; margin-right: 0%;}
+        .Dis_Some_Con{width: fit-content;margin-left: 60%;border: 1px solid black;display: flex; justify-content: flex-end; height: %;}
+        .something input, .search button{border: none; letter-spacing: 0.1em;}
+        .something input{width: 100%;}
+        .search button{background-color: white;}
+        .menus{width: 100%;}
+        .banner{width: 100%;}
+        .banner img{width: 100%;}
+        .merry img{width: 100%;}
+        .Members_join{text-align: center;background: #f4faf8; height: 72px;}
+        .Inspiration{text-align: center;letter-spacing: 0.05em;line-height: 21px;font-family: "SofiaProRegular",Arial,Rockwell,Georgia,"Times New Roman";    font-weight: normal; }
+        .home p{font-size:12px;}
+        .very{text-align: center; font-size: 28px;letter-spacing: .005px;font-family: "Sentinel-Bold",Arial,Rockwell,Georgia,Times New Roman;}    margin-top: 20px;}
+        .sneak{font-style:italic;font-size: 20px;letter-spacing: .005px;font-family: "Sentinel-MediumItal",Arial,Rockwell,Georgia,Times New Roman;}
+        .ideas{width: 100%;background: white}
+        .ideas_sub{width: 100%;  font-size: medium; font-weight: bold; gap: 5%;height: 300px;text-align: center;} 
+        .ideas_sub p{font-weight:"bold"; font-size: medium;}
+        
+      
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="static_Nav flex sbw center">
+            <div class="My_store flex">
+                <h5>My Store: </h5>
+                <h5>Select Your Store</h5>
+            </div>
+            <div class="Nav_Options flex sbw">
+                <div class="signin tooltip">
+                    <!-- <img src="img/contact logo.png" alt="" /> -->
+                    <h5><a href="/signin">Sign In</a></h5>
+
+                       {{!-- <span class="tooltiptext">
+
+                            <div class="signExp">
+                                <p>Sign in for a better experience</p>
+                            </div>
+                        </span> --}}
+                </div>
+                <div class="wishlist">
+                    <!-- <img src="img/wishlist-icon-19.jpg" alt="" /> -->
+                    <h5>Wish List</h5>
+                </div>
+                <div class="cart">
+                    <!-- <img src="" alt="" /> -->
+                    <h5>Cart</h5>
+                </div>
+            </div>
+        </div>
+        <div class="Discover flex sbw">
+                <div class="WM_Logo">
+                        <a href="/"><img src="img/logo.png"/></a>
+                </div>
+                <div class="Dis_Some ">
+                        <div class="Dis_Some_Con">
+                             <div class="something"><input type="search" value="" placeholder="Discover Something ...." /></div>
+                              <div class="search"> <button type="submit">&#128269</button></div>
+                        </div>
+                </div>
+        </div>
+       
+        <div class="menus flex sbw">
+            <div><p>Furniture</p></div>
+            <div><p>Outdoor</p></div>
+            <div><p>Rugs</p></div>
+            <div><p> Decor & Lighting</p></div>
+            <div><p>Bed & Bath</p></div>
+            <div><p>Kitchen & Dinnerware</p></div>
+           <div><p>Food & Drink</p></div>
+            <div><p>Jewelry & Clothing</p></div>
+            <div><p>Gifts</p></div>
+            <div><p>Holidays</p></div>
+            <div><p>Sale</p></div>
+            <div><p>Inspiration</p></div>
+            
+        </div>
+         
+        <div class="Members_join">
+            <div class="members">
+                <h5>Members Save 15% On Curbside Pick-Up Orders<br>
+                    <a href="">Join Now</a> <a href="" >Details</a></h5>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="img/banner.png" alt="">
+        </div>
+        <div class="home">
+            <div class="home_ins"><p>Home / Inspiration</p></div>
+        </div>
+        <hr>
+        <div class="Inspiration">
+            <div>
+                <P><h1>Inspiration</h1>
+                    For entertaining ideas, decorating tips, recipes, trends and new collections, we have inspiration for every room and<br> occasion.</P>
+            </div>
+        </div>
+        <div class="ideas">
+            <div class="ideas_sub flex sbw">
+                <div>
+                    <div class="ideasImg">
+                        <img src="img/throw.jpg" alt="">
+                    </div>
+                    <p>Throw Pillows</p>
+                </div> 
+                <div>
+                     <div class="ideasImg">
+                        <img src="img/rug.jpg" alt="">
+                    </div>
+                    <P> Rugs</P>
+                </div> 
+                  <div>
+                        <div class="ideasImg">
+                            <img src="img/wall.jpg" alt="">
+                        </div>
+                      <p>Wall Decor</p>
+                  </div> 
+                   <div>
+                         <div class="ideasImg">
+                            <img src="img/kitchen.jpg" alt="">
+                        </div>
+                       <p>Kitchen</p>
+                   </div> 
+                  
+            </div>
+        </div>
+
+        <div class="merry">
+            <img src="img/xmas.jpg" alt="">
+        </div>
+        <div class="very">
+           <h2>A Very Merry Preview</h2> 
+            <sneak>Take a Sneak Peek at Our New Holiday Collection!</sneak>
+        </div>
+        <div class="footerArea">
+            <br><br>
+            <div class="footer flex sbw">
+                <div class="about">
+                    <h3> About World Market</h3>
+                            <p>Who We Are</p>
+                            <p>Careers</p>
+                            <p>Site Map</p>
+                            <p>Safety, Security, Privacy</p>
+                            <p>Terms And Conditions</p>
+                            <p>#WorldMarket</p>
+                            <p>Store Events</p>
+                </div>
+                <div class="customer">
+                        <h3>Customer Service</h3>
+                       <p> In-Store Safety</p>
+                        <p>Track My Order</p>
+                        <p>Returns & Exchanges</p>
+                        <p>Shipping & Delivery</p>
+                        <p> Payment</p>
+                        <p><a href="/contact">Contact Us</a></p>
+                        <p>Product Recalls</p>
+                        <p>Gift Card Balance</p>
+                        <p>Buy Online. Free Pickup Curbside.</p>
+                </div>
+
+                <div class="ways">
+                        <h3>Ways To Save</h3>
+                        <P>World Market Rewards</P>
+                        <p>Designer Discount</p>
+                        <p>World Market Coupons</p>
+                        <p>Always A Deal</p>
+                        <p>Everyday Hero Discount</p>
+                        <h3>Contact Us</h3>
+                        <p>1-877-967-5362</p>
+                        <p>Email Us</p>
+                </div>
+
+                <div class="get">
+                            <h3> Get 15% Off Your Purchase</h3>
+                            <p>Join World Market Rewards for exclusive coupons & perks.</p>
+                            <p><a href="/contact">Join Now</a></p>
+                            <hr>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldMarket</title>
+
+
+    <style>
+        .container{width: 80%; margin-left: 10%; background-color: white;}
+        .flex{display: flex;}.sbw{justify-content: space-between;} .center{align-items: center;}
+        .Cust_erv{width: 50%; height: 410px; margin-left: 25%;margin-top: 5%; }
+        .did{background-color:#f4faf8;height:60px ; text-align:center;padding: 12px 0;}
+        .CustomerServ{width:100%; }
+        .CustomerServ input, .CustomerServ select{width: 100%;height: 50px; border-radius: 8px ; border: 0.5px solid black; outline: none;}
+        .CustomerServ textarea{width: 100%; height:150px}
+        .WMPhone{width: 100%;text-align: center; font-size:large;}
+        .WMPhone div{width: 43.5%;gap: 5%; font-weight: bolder;}
+        .sign{border-right: 1px solid grey;}
+        .send{background-color: rgb(27, 100, 129); width: 100%;font-size:15px; text-align: center; color:white;height: 50px;font-weight: bolder; outline:none;}
+        a{text-decoration:none; color: black;}
+        .forget{font-size: 14px;}
+        .keeper{width:80%; gap:5%;}
+        .keeper input{width: 5%; margin: 0; padding:0;}
+        .keeper label{font-size: 14px;}
+        .check{text-align: center;}
+        .check p{font-size: 10px;}
+        .footer{font-size:x-small;font-family: "SofiaProRegular",Arial,Rockwell,Georgia,Times New Roman; padding-left: 3%;padding-right: 5%;}
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        {{{toplogo}}}
+        <hr>
+        <div class="Cust_erv">
+            <div class="did">
+                <p>Did you sign-up via SMS or with an associate in-store?<br>
+                    Complete your profile</p>
+            </div><br><br><br>
+            <div class="CustomerServ">
+              
+
+                <form method="POST" action="/" >
+                   
+                   <div class="WMPhone flex">
+                        <div class="sign"> <a href="/signin">SIGN IN</a></div>
+                        <div class="join"> <a href="/join">JOIN</a></div>
+                    </div><br>
+                    <div>
+                        <input type="email" name="email" placeholder="  *Email Address" required/>
+                     <div><br>
+                        <div>
+                            <input type="password" name="password" placeholder="    *Password" required/>
+                         <div><br>
+                    <div class="forget flex sbw">
+                        <div class="keeper flex">
+                            <input type="checkbox" name="keepSigned" value="keepSigned" required/>
+                            <label for="vehicle1"> Keep me signed in.</label><br>
+                        </div>
+                        <div class="forgot"><a href=""></a>Forgot Password ?</div>
+                    </div><br>
+                    <div class="check">
+                        <p>By checking this box you won't have to sign in as often on this device. For your security, we<br>
+                             recommend only checking this box on your personal device</p>
+                    </div>
+                    <div class="send_div">
+                        <button type="submit" class="send">SIGN IN</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+      
+    </div>
+
+    
+</body>
+</html>
